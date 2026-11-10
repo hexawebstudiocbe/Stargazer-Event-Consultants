@@ -8,10 +8,17 @@ const nav = [['Home', '/'], ['About', '/about'], ['Services', '/services'], ['Ou
 
 export default function Header() {
   const [open, setOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
   const location = useLocation()
   useEffect(() => setOpen(false), [location])
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40)
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
   return (
-    <header className="header">
+    <header className={scrolled || open ? 'header header-scrolled' : 'header'}>
       <Logo />
       <nav className={open ? 'nav nav-open' : 'nav'}>
         {nav.map(([label, path]) => <NavLink key={path} to={path} end={path === '/'}>{label}</NavLink>)}

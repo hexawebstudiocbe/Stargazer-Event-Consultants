@@ -1,4 +1,5 @@
-.header{height:88px;padding:0 6vw;display:flex;align-items:center;justify-content:space-between;position:absolute;z-index:20;top:0;left:0;width:100%;border-bottom:1px solid rgba(255,255,255,.16);background:rgba(8,6,10,.38);backdrop-filter:blur(14px)}
+.header{height:88px;padding:0 6vw;display:flex;align-items:center;justify-content:space-between;position:fixed;z-index:20;top:0;left:0;width:100%;border-bottom:1px solid rgba(255,255,255,.16);background:rgba(8,6,10,.38);backdrop-filter:blur(14px);transition:background .35s,border-color .35s}
+.header-scrolled{background:rgba(9,7,11,.92)}
 .nav{display:flex;gap:38px;align-items:center}.nav a{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#ddd2dc;transition:color .25s}.nav a:hover,.nav a.active{color:#f08bd5}
 .nav-cta{display:inline-flex;align-items:center;gap:12px;font-size:12px;text-transform:uppercase;letter-spacing:.12em;border:1px solid rgba(255,255,255,.45);padding:13px 17px}.nav-cta:hover{background:#fff;color:#09070b}
 .menu-btn{display:none;background:none;color:white;border:0}

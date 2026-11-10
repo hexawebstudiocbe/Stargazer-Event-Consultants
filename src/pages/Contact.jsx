@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { ArrowUpRight, Instagram, Facebook, Mail, Phone, MapPin } from 'lucide-react'
 import PageIntro from '../components/PageIntro'
+import RevealHeading from '../components/RevealHeading'
 import './Contact.css'
 
 export default function Contact() {
@@ -19,7 +20,7 @@ export default function Contact() {
     <section className="contact-layout section-pad">
       <div className="contact-details">
         <span className="eyebrow">GET IN TOUCH</span>
-        <h2>Let’s make<br /><em>it happen.</em></h2>
+        <RevealHeading as="h2">Let’s make<br /><em>it happen.</em></RevealHeading>
         <div className="contact-item"><MapPin /><div><b>Visit us</b><p>39, Jalan Desa Bahagia,<br />Taman Desa, Old Klang Road,<br />58100 Kuala Lumpur, Malaysia.</p></div></div>
         <div className="contact-item"><Phone /><div><b>Call us</b><p>+6017 337 5545<br />+603 6211 5281</p></div></div>
         <div className="contact-item"><Mail /><div><b>Email</b><p><a href="mailto:info@stargazerconsultants.com.my">info@stargazerconsultants.com.my</a><br /><a href="mailto:stargazerconsultants@gmail.com">stargazerconsultants@gmail.com</a></p></div></div>

@@ -4,6 +4,8 @@ import { ArrowUpRight } from 'lucide-react'
 import { services, IMG } from '../data'
 import PageIntro from '../components/PageIntro'
 import Callout from '../components/Callout'
+import RevealHeading from '../components/RevealHeading'
+import ParallaxImage from '../components/ParallaxImage'
 import './Services.css'
 
 export default function Services() {
@@ -13,7 +15,7 @@ export default function Services() {
     <section className="services-page section-pad">
       <div className="services-lead">
         <span className="eyebrow">OUR SERVICES</span>
-        <h2>From the first idea<br />to the <em>final encore.</em></h2>
+        <RevealHeading as="h2">From the first idea<br />to the <em>final encore.</em></RevealHeading>
         <p>Sixteen services covering launches, staging, audiovisual and lighting systems, venue decoration, food &amp; beverage, logistics, security and merchandising.</p>
       </div>
       <div className="services-list">
@@ -22,8 +24,8 @@ export default function Services() {
     </section>
 
     <section className="services-image">
-      <img src={IMG + 'ballroom.jpg'} alt="Large-scale event venue with stage and lighting" />
-      <div><span className="eyebrow">PRODUCTION WITH PURPOSE</span><h2>Make room for<br /><em>the extraordinary.</em></h2></div>
+      <ParallaxImage src={IMG + 'ballroom.jpg'} alt="Large-scale event venue with stage and lighting" />
+      <div><span className="eyebrow">PRODUCTION WITH PURPOSE</span><RevealHeading as="h2">Make room for<br /><em>the extraordinary.</em></RevealHeading></div>
     </section>
 
     <Callout />

@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ArrowDown, ArrowUpRight, Sparkles } from 'lucide-react'
 import { services, clients, IMG } from '../data'
 import SectionHead from '../components/SectionHead'
 import Callout from '../components/Callout'
+import RevealHeading from '../components/RevealHeading'
+import ParallaxImage from '../components/ParallaxImage'
 import './Home.css'
 
 const reveal = { hidden: { opacity: 0, y: 34 }, show: { opacity: 1, y: 0, transition: { duration: .75, ease: [.22, 1, .36, 1] } } }
@@ -28,11 +30,36 @@ function HeroBackdrop() {
   </>
 }
 
+function HeroSpotlight() {
+  const ref = useRef(null)
+  useEffect(() => {
+    const el = ref.current
+    if (!el || window.matchMedia('(prefers-reduced-motion: reduce)').matches || !window.matchMedia('(hover: hover)').matches) return
+    const hero = el.parentElement
+    let raf
+    const move = (e) => {
+      cancelAnimationFrame(raf)
+      raf = requestAnimationFrame(() => {
+        const r = hero.getBoundingClientRect()
+        el.style.setProperty('--mx', `${e.clientX - r.left}px`)
+        el.style.setProperty('--my', `${e.clientY - r.top}px`)
+        el.style.opacity = 1
+      })
+    }
+    const leave = () => { el.style.opacity = 0 }
+    hero.addEventListener('mousemove', move)
+    hero.addEventListener('mouseleave', leave)
+    return () => { cancelAnimationFrame(raf); hero.removeEventListener('mousemove', move); hero.removeEventListener('mouseleave', leave) }
+  }, [])
+  return <div className="hero-spotlight" ref={ref} aria-hidden="true" />
+}
+
 export default function Home() {
   return <main>
     <section className="hero">
       <HeroBackdrop />
       <div className="hero-shade" />
+      <HeroSpotlight />
       <div className="hero-content">
         <motion.span className="eyebrow" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .2 }}>EVENTS THAT STAY WITH YOU</motion.span>
         <motion.h1 initial={{ opacity: 0, y: 55 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: .35 }}>Make every<br /><em>moment</em> matter.</motion.h1>
@@ -48,18 +75,18 @@ export default function Home() {
       <div className="intro-number">01 / 04</div>
       <div className="intro-copy">
         <span className="eyebrow">WELCOME TO STARGAZER</span>
-        <h2>We turn ideas into<br /><em>extraordinary experiences.</em></h2>
+        <RevealHeading as="h2">We turn ideas into<br /><em>extraordinary experiences.</em></RevealHeading>
         <p>Stargazer Event Consultants has been designing and running world-class corporate event solutions for clients since 2009. We love what we do. Our creative approach and swift delivery in large-scale events make us specialists in our field.</p>
         <Link to="/about" className="text-link">Discover our story <ArrowUpRight size={17} /></Link>
       </div>
-      <div className="intro-photo"><img src={IMG + 'about-event.jpg'} alt="A corporate event produced by Stargazer" /><span className="photo-caption">A MOMENT, BEAUTIFULLY MADE</span></div>
+      <div className="intro-photo"><ParallaxImage src={IMG + 'about-event.jpg'} alt="A corporate event produced by Stargazer" /><span className="photo-caption">A MOMENT, BEAUTIFULLY MADE</span></div>
     </section>
 
     <section className="feature-band">
       <div className="feature-backdrop" />
       <div className="feature-inner">
         <span className="eyebrow">THE STARGAZER DIFFERENCE</span>
-        <h2>Small details.<br /><em>Big impressions.</em></h2>
+        <RevealHeading as="h2">Small details.<br /><em>Big impressions.</em></RevealHeading>
         <p>What sets us apart is our ability to turn small-budget events into extraordinary ones. Every event is given the utmost attention to detail, irrespective of size or budget.</p>
         <Link to="/services" className="button button-outline">What we do <ArrowUpRight size={17} /></Link>
       </div>
@@ -73,10 +100,10 @@ export default function Home() {
     </section>
 
     <section className="work-preview">
-      <div className="work-preview-image"><img src={IMG + 'ballroom.jpg'} alt="Elegant corporate gala dinner" /></div>
+      <div className="work-preview-image"><ParallaxImage src={IMG + 'ballroom.jpg'} alt="Elegant corporate gala dinner" /></div>
       <div className="work-preview-copy">
         <span className="eyebrow">SELECTED EXPERIENCES</span>
-        <h2>Built around<br /><em>your big moment.</em></h2>
+        <RevealHeading as="h2">Built around<br /><em>your big moment.</em></RevealHeading>
         <p>From corporate launches and annual dinners to exhibitions and roadshows, we bring the vision, people and production together.</p>
         <Link to="/work" className="text-link">View our work <ArrowUpRight size={17} /></Link>
       </div>
