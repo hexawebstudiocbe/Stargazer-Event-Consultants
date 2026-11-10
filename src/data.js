@@ -31,21 +31,31 @@ export const events = [
   'BrandLaureate World Awards, Shenzhen, China',
   'The Gamuda Land Biodiversity Day',
   'MAHSING Property Showcase',
-  'Malaysia Landscape Architecture Awards 2019',
+  'Malaysia Landscape Architecture Awards 2019 with Minister of Federal Territories',
   'Carrier Sports Club Annual Team Building, Langkawi',
+  'BrandLaureate World Awards, Hanoi, Vietnam',
   'CIMB Staff Sustainability Appreciation Dinner',
-  'Malaysia Landscape Architecture Awards 2022',
-  'Gold A-Heart Fundraising Appreciation Dinner',
-  'YTL Communications “Learn From Home” Project',
+  'BrandLaureate Special Edition World Awards, Singapore',
+  'Malaysia Landscape Architecture Awards 2022 with Chief Minister of Penang',
+  'Gold A-Heart Fundraising Appreciation Dinner with Duli Yang Maha Mulia Tuanku Raja Perlis',
+  'YTL Communications “Learn From Home” Project with Minister of Communications & Multimedia',
   'CIMB EPICC Roadshow',
   'CIMB Consumer Sales & Distribution Half Yearly Review',
-  'International Malaysia Law Conference 2023'
+  'Malaysia Landscape Architecture Awards 2023 with Menteri Besar of Johor',
+  'The BrandLaureate Brand ICON Leadership Awards',
+  'International Malaysia Law Conference 2023 with Prime Minister of Malaysia'
 ]
 
 export const clients = [
-  'CIMB Bank','Gamuda Land','Institute of Landscape Architects Malaysia','Mah Sing Group',
-  'YES','OCBC Bank','QNET','Mercy Malaysia','Carrier','Sunway University','Louvia Group',
-  'IBG','Recron','The BrandLaureate','Reckitt','Emerson','Chevrolet','Acts One Group',
-  'Sheraton Subang','Kingdomcity','FETRA','Jump Street','IACT College','Brickfields Asia College',
-  'CFA Society Malaysia','Point','OHMSI'
+  'CIMB Bank','Gamuda Land','Institute of Landscape Architects Malaysia (ILAM)','Mah Sing Group','YES',
+  'NAZA Group of Companies','Malaysian Bar Council','Manulife','OCBC Bank','QNET','Mercy Malaysia',
+  'Carrier','Sunway University','Low Yat Group','International Brands Gallery (IBG)','Recron',
+  'The BrandLaureate','Reckitt','Emerson Process Management','Chevrolet','Acts One Group Inc',
+  'The Alice Smith School','Sheraton Subang','Kingdomcity','EFTRA','Jump Street','IACT College',
+  'Early Autism Project','Brickfields Asia College','CFA Society Malaysia','Film Point',
+  'Oriental Hearts And Minds Study Institute (OHMSI)'
 ]
+
+export const mission = 'Our mission is dedicated to creating STYLISH, SENSATIONAL events while ensuring it to be a SPECTACULAR SUCCESS.'
+export const award = 'Winner of The BrandLaureate SMEs BestBrands of The Decade Award'
+export const IMG = '/images/'

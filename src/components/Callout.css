@@ -1,0 +1,4 @@
+.callout{position:relative;overflow:hidden;text-align:center;padding:125px 20px;background:radial-gradient(ellipse at 50% 110%,#70165b 0%,#240e24 48%,#100b12 100%)}
+.callout h2{font:300 clamp(43px,6vw,76px)/1.06 'Manrope';letter-spacing:-.065em;margin:25px 0 35px}.callout h2 em{font-style:normal;color:#e57bc2}
+.callout-orbit{position:absolute;width:400px;height:400px;border:1px solid rgba(233,116,199,.16);border-radius:50%;top:-280px;left:calc(50% - 200px)}
+@media(max-width:680px){.callout{padding:90px 8vw}.callout h2{font-size:46px}}

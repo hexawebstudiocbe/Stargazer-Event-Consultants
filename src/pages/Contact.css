@@ -1,0 +1,14 @@
+.contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:12%}
+.contact-details h2{font:300 clamp(48px,6vw,76px)/1.06 'Manrope';letter-spacing:-.065em;margin:22px 0 55px}.contact-details h2 em{font-style:normal;color:#e57bc2}
+.contact-item{display:flex;gap:18px;margin:28px 0}.contact-item>svg{color:#e47ac1;width:18px;flex-shrink:0}.contact-item b{font:600 12px 'Manrope'}.contact-item p{font-size:13px;line-height:1.8;color:#b9aeb9;margin:8px 0}.contact-item a:hover{color:#e47ac1}
+.contact-social{display:flex;gap:25px;margin-top:35px}.contact-social a{display:flex;align-items:center;gap:9px;font-size:11px;color:#d9cbd9}.contact-social svg{width:16px;color:#e47ac1}
+.contact-form{background:#151018;padding:42px;display:flex;flex-direction:column;gap:25px;border:1px solid var(--line)}
+.contact-form label{display:flex;flex-direction:column;gap:11px;font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:#d8cbd8}
+.contact-form input,.contact-form textarea{background:transparent;border:0;border-bottom:1px solid #594b59;padding:12px 0;color:#fff;outline:none;resize:vertical;font-size:13px;letter-spacing:0;text-transform:none}
+.contact-form input:focus,.contact-form textarea:focus{border-color:#e47ac1}
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:#766a76}
+.contact-form .button{align-self:flex-start;border:0;cursor:pointer}
+.contact-form small,.form-note{font-size:10px;color:#9b8e9b;line-height:1.6}
+
+@media(max-width:900px){.contact-layout{gap:6%}}
+@media(max-width:680px){.contact-details h2{font-size:44px;margin-bottom:35px}.contact-layout{grid-template-columns:1fr;gap:55px}.contact-form{padding:28px 22px}}

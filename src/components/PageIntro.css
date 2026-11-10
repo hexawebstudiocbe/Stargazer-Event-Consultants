@@ -1,0 +1,5 @@
+.page-intro{min-height:530px;padding:190px 12vw 90px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 85% 25%,rgba(142,26,111,.27),transparent 36%),#100b12}
+.page-intro h1{font:300 clamp(58px,8vw,110px)/.96 'Manrope',sans-serif;letter-spacing:-.075em;margin:22px 0;position:relative;z-index:2}.page-intro h1 em{font-style:normal;color:#e57bc2}
+.page-intro p{color:#b8abb8;max-width:530px;line-height:1.8;font-size:14px}
+.intro-orbit{position:absolute;width:440px;height:440px;border:1px solid rgba(226,91,181,.22);border-radius:50%;right:8%;top:85px}.intro-orbit:before,.intro-orbit:after{content:'';position:absolute;border:1px solid rgba(226,91,181,.16);border-radius:50%;inset:35px}.intro-orbit:after{inset:85px}
+@media(max-width:680px){.page-intro{padding:150px 8vw 75px;min-height:440px}.page-intro h1{font-size:clamp(57px,14vw,84px)}.intro-orbit{width:250px;height:250px;right:-100px;top:120px}}
