@@ -43,7 +43,10 @@ export const events = [
   'CIMB Consumer Sales & Distribution Half Yearly Review',
   'Malaysia Landscape Architecture Awards 2023 with Menteri Besar of Johor',
   'The BrandLaureate Brand ICON Leadership Awards',
-  'International Malaysia Law Conference 2023 with Prime Minister of Malaysia'
+  'International Malaysia Law Conference 2023 with Prime Minister of Malaysia',
+  '37th LAWASIA Conference 2024 with Prime Minister of Malaysia',
+  'DNA Symposium Kuala Lumpur',
+  'Malaysian Bar Annual Dinner & Dance'
 ]
 
 export const clients = [

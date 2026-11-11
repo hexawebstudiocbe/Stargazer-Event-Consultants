@@ -1,5 +1,5 @@
 import React from 'react'
-import { clients, events, mission, award, IMG } from '../data'
+import { clients, events, mission, award } from '../data'
 import PageIntro from '../components/PageIntro'
 import SectionHead from '../components/SectionHead'
 import Callout from '../components/Callout'
@@ -13,7 +13,7 @@ export default function About() {
     <PageIntro kicker="THE PEOPLE BEHIND THE MOMENTS" title={<>A little about<br /><em>Stargazer.</em></>} desc="Creative thinking, thoughtful planning and a passion for making every occasion count." />
 
     <section className="about-story section-pad">
-      <div className="about-image"><ParallaxImage src={IMG + 'about-event.jpg'} alt="Event stage and gala setup" /></div>
+      <div className="about-image"><ParallaxImage src={'/images/site/about-story.webp'} alt="Event stage and gala setup" /></div>
       <div className="about-text">
         <span className="eyebrow">OUR STORY · SINCE 2009</span>
         <RevealHeading as="h2">We love what<br /><em>we do.</em></RevealHeading>
@@ -29,7 +29,7 @@ export default function About() {
     </section>
 
     <section className="belief-section">
-      <div className="belief-photo"><ParallaxImage src={IMG + 'launch-event.jpg'} alt="Corporate launch celebration" /></div>
+      <div className="belief-photo"><ParallaxImage src={'/images/site/belief.webp'} alt="Corporate launch celebration" /></div>
       <div className="belief-copy">
         <span className="eyebrow">WHAT WE BELIEVE</span>
         <RevealHeading as="h2">Events connect people.<br /><em>Experiences spark change.</em></RevealHeading>

@@ -22,7 +22,7 @@
 .photo-caption{position:absolute;bottom:15px;left:15px;font-size:8px;letter-spacing:.2em;background:#0a070c;padding:10px 13px}
 /* Feature band */
 .feature-band{min-height:620px;position:relative;display:flex;align-items:center;overflow:hidden;background:#561448}
-.feature-backdrop{position:absolute;inset:0;background:linear-gradient(90deg,rgba(26,8,27,.92),rgba(43,10,43,.55)),url('/images/launch-event.jpg') center/cover}
+.feature-backdrop{position:absolute;inset:0;background:linear-gradient(90deg,rgba(26,8,27,.92),rgba(43,10,43,.55)),url('/images/site/feature-band.webp') center/cover}
 .feature-inner{position:relative;padding:100px 15vw;max-width:900px}
 .feature-inner h2{font:300 clamp(55px,7vw,94px)/.98 'Manrope';letter-spacing:-.07em;margin:24px 0}.feature-inner h2 em{font-style:normal;color:#e57bc2}
 .feature-inner p{max-width:480px;color:#e2cfe0;line-height:1.8;font-size:14px;margin-bottom:32px}

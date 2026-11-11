@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="footer-top">
         <div>
           <Logo />
-          <p className="footer-tag">STYLISH. SENSATIONAL.<br />SPECTACULAR. SUCCESS.</p>
+          <p className="footer-tag">STYLISH, SOPHISTICATED,<br />SENSATIONAL &amp; SPECTACULAR.</p>
         </div>
         <div className="footer-cta">
           <span className="eyebrow">HAVE AN EVENT IN MIND?</span>

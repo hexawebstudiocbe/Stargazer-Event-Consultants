@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { ArrowUpRight } from 'lucide-react'
-import { services, IMG } from '../data'
+import { services } from '../data'
 import PageIntro from '../components/PageIntro'
 import Callout from '../components/Callout'
 import RevealHeading from '../components/RevealHeading'
@@ -24,8 +24,8 @@ export default function Services() {
     </section>
 
     <section className="services-image">
-      <ParallaxImage src={IMG + 'ballroom.jpg'} alt="Large-scale event venue with stage and lighting" />
-      <div><span className="eyebrow">PRODUCTION WITH PURPOSE</span><RevealHeading as="h2">Make room for<br /><em>the extraordinary.</em></RevealHeading></div>
+      <ParallaxImage src={'/images/site/services-banner.webp'} alt="Large-scale event venue with stage and lighting" />
+      <div className="services-image-copy"><span className="eyebrow">PRODUCTION WITH PURPOSE</span><RevealHeading as="h2">Make room for<br /><em>the extraordinary.</em></RevealHeading></div>
     </section>
 
     <Callout />

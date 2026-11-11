@@ -2,7 +2,8 @@ import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ArrowDown, ArrowUpRight, Sparkles } from 'lucide-react'
-import { services, clients, IMG } from '../data'
+import { services, clients } from '../data'
+import { heroImages } from '../workData'
 import SectionHead from '../components/SectionHead'
 import Callout from '../components/Callout'
 import RevealHeading from '../components/RevealHeading'
@@ -10,7 +11,7 @@ import ParallaxImage from '../components/ParallaxImage'
 import './Home.css'
 
 const reveal = { hidden: { opacity: 0, y: 34 }, show: { opacity: 1, y: 0, transition: { duration: .75, ease: [.22, 1, .36, 1] } } }
-const heroSlides = ['hero-event.jpg', 'ballroom.jpg', 'launch-event.jpg', 'corporate-events.jpg']
+const heroSlides = heroImages
 
 function HeroBackdrop() {
   const [active, setActive] = useState(0)
@@ -21,7 +22,7 @@ function HeroBackdrop() {
   return <>
     <div className="hero-slides" aria-hidden="true">
       <AnimatePresence initial={false}>
-        <motion.img key={heroSlides[active]} src={IMG + heroSlides[active]} className="hero-slide" alt="" initial={{ opacity: 0, scale: 1.09 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }} transition={{ opacity: { duration: 1.35 }, scale: { duration: 7, ease: 'linear' } }} />
+        <motion.img key={heroSlides[active]} src={heroSlides[active]} className="hero-slide" alt="" initial={{ opacity: 0, scale: 1.09 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }} transition={{ opacity: { duration: 1.35 }, scale: { duration: 7, ease: 'linear' } }} />
       </AnimatePresence>
     </div>
     <div className="hero-progress" aria-label={`Slide ${active + 1} of ${heroSlides.length}`}>
@@ -63,7 +64,7 @@ export default function Home() {
       <div className="hero-content">
         <motion.span className="eyebrow" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .2 }}>EVENTS THAT STAY WITH YOU</motion.span>
         <motion.h1 initial={{ opacity: 0, y: 55 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: .35 }}>Make every<br /><em>moment</em> matter.</motion.h1>
-        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .9 }}>Stylish. Sensational. Spectacular. Success.</motion.p>
+        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .9 }}>Stylish, Sophisticated, Sensational &amp; Spectacular.</motion.p>
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.1 }}><Link to="/work" className="button button-light">Explore our work <ArrowUpRight size={17} /></Link></motion.div>
       </div>
       <div className="hero-index"><span>{String(1).padStart(2, '0')}</span><i /><span>04</span></div>
@@ -79,7 +80,7 @@ export default function Home() {
         <p>Stargazer Event Consultants has been designing and running world-class corporate event solutions for clients since 2009. We love what we do. Our creative approach and swift delivery in large-scale events make us specialists in our field.</p>
         <Link to="/about" className="text-link">Discover our story <ArrowUpRight size={17} /></Link>
       </div>
-      <div className="intro-photo"><ParallaxImage src={IMG + 'about-event.jpg'} alt="A corporate event produced by Stargazer" /><span className="photo-caption">A MOMENT, BEAUTIFULLY MADE</span></div>
+      <div className="intro-photo"><ParallaxImage src={'/images/site/home-intro.webp'} alt="A corporate event produced by Stargazer" /><span className="photo-caption">A MOMENT, BEAUTIFULLY MADE</span></div>
     </section>
 
     <section className="feature-band">
@@ -100,7 +101,7 @@ export default function Home() {
     </section>
 
     <section className="work-preview">
-      <div className="work-preview-image"><ParallaxImage src={IMG + 'ballroom.jpg'} alt="Elegant corporate gala dinner" /></div>
+      <div className="work-preview-image"><ParallaxImage src={'/images/site/work-preview.webp'} alt="Elegant corporate gala dinner" /></div>
       <div className="work-preview-copy">
         <span className="eyebrow">SELECTED EXPERIENCES</span>
         <RevealHeading as="h2">Built around<br /><em>your big moment.</em></RevealHeading>

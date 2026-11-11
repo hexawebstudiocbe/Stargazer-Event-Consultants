@@ -28,9 +28,9 @@ export default function App() {
         <Routes location={location}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          {/* <Route path="/services" element={<Services />} /> */}
-          {/* <Route path="/work" element={<Work />} /> */}
-          {/* <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/services" element={<Services />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </PageTransition>
     </AnimatePresence>
