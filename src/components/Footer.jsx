@@ -24,7 +24,7 @@ export default function Footer() {
         <span>Kuala Lumpur, Malaysia</span>
         <div className="socials">
           <a href="https://www.instagram.com/stargazerconsultants" aria-label="Instagram"><Instagram size={17} /></a>
-          <a href="https://www.facebook.com/" aria-label="Facebook"><Facebook size={17} /></a>
+          <a href="https://www.facebook.com/stargazerconsultants.info/" aria-label="Facebook"><Facebook size={17} /></a>
         </div>
       </div>
     </footer>

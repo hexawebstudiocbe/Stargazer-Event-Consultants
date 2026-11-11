@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Award } from 'lucide-react'
 import RevealHeading from './RevealHeading'
-import { award } from '../data'
 import './AwardFeature.css'
 
 // Drop the photo at public/images/site/award.webp (or change AWARD_PHOTO).
@@ -17,9 +16,10 @@ export default function AwardFeature() {
           : <img src={AWARD_PHOTO} alt="Mark Achariam receiving the BrandLaureate SMEs BestBrands of The Decade Award" onError={() => setMissing(true)} />}
       </div>
       <div className="award-copy">
-        <span className="eyebrow">RECOGNISED EXCELLENCE</span>
-        <RevealHeading as="h2">An award-winning<br /><em>brand.</em></RevealHeading>
-        <p>{award}. Mark Achariam received the BrandLaureate SMEs BestBrands of The Decade Award on behalf of Stargazer Event Consultants, a recognition of the creativity, care and consistency our clients have come to expect.</p>
+        <RevealHeading as="h2">Acknowledgement<br />of <em>Excellence</em></RevealHeading>
+        <p className="award-recipient">Recipient of The BrandLaureate SMEs BestBrands of The Decade Award</p>
+        <p>Stargazer Event Consultants was honoured with the prestigious BrandLaureate SMEs BestBrands of The Decade Award, received by Managing Director, Mark Achariam, on behalf of the company.</p>
+        <p>This distinguished recognition reflects the organisation's enduring commitment to creative excellence, professional integrity and consistently delivering exceptional event experiences. It stands as a testament to the dedication, expertise and high standards that define the Stargazer brand.</p>
       </div>
     </section>
   )

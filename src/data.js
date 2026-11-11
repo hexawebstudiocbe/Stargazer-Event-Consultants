@@ -1,4 +1,4 @@
-export const services = [
+const allServices = [
   'Corporate launch specialist',
   '3D projection & multi-image AV system',
   'Special effects / pyrotechnics',
@@ -16,6 +16,10 @@ export const services = [
   'Security, VIP handling & crowd management',
   'Merchandising, premium gifts & personalised printing'
 ]
+
+// Brochure service numbers shown on the site
+export const servicePicks = [1, 2, 4, 6, 8, 13, 14, 16]
+export const services = servicePicks.map(n => allServices[n - 1])
 
 export const events = [
   'The Official Opening of Chevrolet 3S Centre Puchong with Minister of Transport',

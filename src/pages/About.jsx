@@ -1,11 +1,10 @@
 import React from 'react'
-import { clients, clientLogo, events, mission, award } from '../data'
+import { clients, clientLogo, mission, award } from '../data'
 import PageIntro from '../components/PageIntro'
 import SectionHead from '../components/SectionHead'
 import Callout from '../components/Callout'
 import RevealHeading from '../components/RevealHeading'
 import ParallaxImage from '../components/ParallaxImage'
-import CountUp from '../components/CountUp'
 import AwardFeature from '../components/AwardFeature'
 import './About.css'
 
@@ -16,26 +15,22 @@ export default function About() {
     <section className="about-story section-pad">
       <div className="about-image"><ParallaxImage src={'/images/site/about-story.webp'} alt="Event stage and gala setup" /></div>
       <div className="about-text">
-        <span className="eyebrow">OUR STORY · SINCE 2009</span>
-        <RevealHeading as="h2">We love what<br /><em>we do.</em></RevealHeading>
-        <p>Stargazer Event Consultants have been designing and running world class corporate event solutions for clients since 2009. We love what we do. Our creative approach and swift delivery in large scale events make us the specialists in our field.</p>
-        <p>Heading Stargazer Event Consultants is Mark Achariam, a person no stranger to the event management industry. He boasts 25 years of industry experience, spearheading numerous projects with big names in the corporate sector. Under his leadership Stargazer received the BrandLaureate SMEs BestBrands of The Decade Award.</p>
-        <div className="stat-row">
-          <div><strong><CountUp from={2000} to={2009} /></strong><span>Established</span></div>
-          <div><strong><CountUp to={25} suffix=" yrs" /></strong><span>Industry experience</span></div>
-          <div><strong><CountUp to={events.length} /></strong><span>Events showcased</span></div>
-          <div><strong><CountUp to={clients.length} /></strong><span>Clients</span></div>
-        </div>
+        <RevealHeading as="h2">About Stargazer<br /><em>Event Consultants</em></RevealHeading>
+        <p>Established in 2009, Stargazer Event Consultants is a corporate event management company specialising in the conceptualisation, design and execution of world-class event experiences. Driven by creativity, precision and a passion for excellence, we deliver innovative event solutions with seamless execution, particularly for large-scale corporate events. Our commitment to quality, attention to detail and ability to deliver with efficiency have earned us a reputation as a trusted partner in the industry.</p>
+        <h3 className="about-subhead">Leadership &amp; Experience</h3>
+        <p>At the helm of Stargazer Event Consultants is Mark Achariam, a respected industry professional with over 25 years of experience in event management. Throughout his career, Mark has spearheaded numerous high-profile projects and collaborated with prominent names across the corporate sector.</p>
+        <p>Under his leadership, Stargazer Event Consultants was honoured with the prestigious BrandLaureate SMEs BestBrands of The Decade Award, a testament to the company's commitment to excellence, industry contribution and brand reputation.</p>
+        <p>With a clear vision and an unwavering passion for creating exceptional experiences, Mark continues to lead the team in delivering events that go beyond expectations.</p>
       </div>
     </section>
 
     <section className="belief-section">
       <div className="belief-photo"><ParallaxImage src={'/images/site/belief.webp'} alt="Corporate launch celebration" /></div>
       <div className="belief-copy">
-        <span className="eyebrow">WHAT WE BELIEVE</span>
-        <RevealHeading as="h2">Events connect people.<br /><em>Experiences spark change.</em></RevealHeading>
-        <p>What sets us apart from the rest is our ability to turn small budget events into extraordinary ones. Each event is given the utmost attention to detail, irrespective of size or budget. We always ensure to create outstanding results because of our creativity and experience.</p>
-        <p>We believe events are so much more than launches and conferences. Events connect people, breed innovation, build communities, and spark change. With Stargazer Event Consultants, we ensure our clients keep reaching for the stars.</p>
+        <RevealHeading as="h2">Our Philosophy<br />&amp; <em>Approach</em></RevealHeading>
+        <p>What distinguishes Stargazer Event Consultants is our ability to transform every event into an exceptional experience, regardless of its scale or budget. We believe that great events are not defined by how much is spent, but by the vision, creativity and attention to detail behind every execution. Every project is approached with the same dedication, thoughtful planning and commitment to excellence, ensuring outstanding results that leave a lasting impression.</p>
+        <p>To us, events are more than just launches, conferences or corporate gatherings. They are powerful platforms that bring people together, inspire ideas, foster meaningful connections, strengthen communities and create lasting impact.</p>
+        <p>At Stargazer Event Consultants, we believe in turning possibilities into extraordinary experiences. Through creativity, experience and a passion for excellence, we strive to take every vision further and inspire our clients to continue reaching for the stars.</p>
       </div>
     </section>
 

@@ -27,7 +27,7 @@ export default function Contact() {
         <div className="contact-item"><MessageCircle /><div><b>WhatsApp</b><p><a href="https://wa.me/60105667445" target="_blank" rel="noreferrer">+6010 566 7445</a></p></div></div>
         <div className="contact-item"><Mail /><div><b>Email</b><p><a href="mailto:info@stargazerconsultants.com.my">info@stargazerconsultants.com.my</a></p></div></div>
         <div className="contact-item"><Globe /><div><b>Website</b><p><a href="https://www.stargazerconsultants.com.my">www.stargazerconsultants.com.my</a></p></div></div>
-        <div className="contact-social"><a href="https://www.instagram.com/stargazerconsultants"><Instagram /> Instagram</a><a href="https://www.facebook.com/"><Facebook /> Facebook</a></div>
+        <div className="contact-social"><a href="https://www.instagram.com/stargazerconsultants"><Instagram /> Instagram</a><a href="https://www.facebook.com/stargazerconsultants.info/"><Facebook /> Facebook</a></div>
       </div>
 
       <form className="contact-form" onSubmit={submit}>
