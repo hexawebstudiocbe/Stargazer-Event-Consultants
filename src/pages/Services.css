@@ -20,3 +20,13 @@
 .service-row{grid-template-columns:28px 1fr 18px;padding:18px 0;gap:12px}.service-row h3{font-size:13px}
 .services-image{height:420px}.services-image-copy{left:8%}
 }
+
+/* Service rows with icons */
+.services-list{border-top:0;display:flex;flex-direction:column;gap:12px}
+.service-row{grid-template-columns:54px 1fr 20px;gap:20px;padding:16px 20px;border:1px solid var(--line);border-radius:14px;background:linear-gradient(90deg,#1a1020,#120b15);transition:transform .35s,border-color .35s,background .35s}
+.service-row:hover{padding-left:20px;transform:translateX(8px);border-color:rgba(229,123,194,.5);background:linear-gradient(90deg,#2a1330,#150c19)}
+.service-row-icon{width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(229,123,194,.12);border:1px solid rgba(229,123,194,.35);color:#ee8bd0}
+.service-row-icon svg{width:24px;height:24px;color:inherit}
+.service-row-text{display:flex;flex-direction:column;gap:5px}
+.service-row-text span{font-size:10px;color:#df73bd;letter-spacing:.15em}
+@media(max-width:680px){.service-row{grid-template-columns:44px 1fr 18px;padding:13px 14px;gap:14px}.service-row-icon{width:44px;height:44px}.service-row:hover{transform:none}}

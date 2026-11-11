@@ -1,11 +1,12 @@
 import React from 'react'
-import { clients, events, mission, award } from '../data'
+import { clients, clientLogo, events, mission, award } from '../data'
 import PageIntro from '../components/PageIntro'
 import SectionHead from '../components/SectionHead'
 import Callout from '../components/Callout'
 import RevealHeading from '../components/RevealHeading'
 import ParallaxImage from '../components/ParallaxImage'
 import CountUp from '../components/CountUp'
+import AwardFeature from '../components/AwardFeature'
 import './About.css'
 
 export default function About() {
@@ -18,10 +19,10 @@ export default function About() {
         <span className="eyebrow">OUR STORY · SINCE 2009</span>
         <RevealHeading as="h2">We love what<br /><em>we do.</em></RevealHeading>
         <p>Stargazer Event Consultants have been designing and running world class corporate event solutions for clients since 2009. We love what we do. Our creative approach and swift delivery in large scale events make us the specialists in our field.</p>
-        <p>Heading Stargazer Event Consultants is Mark Achariam, a person no stranger to the event management industry. He boasts 23 years of industry experience, spearheading numerous projects with big names in the corporate sector.</p>
+        <p>Heading Stargazer Event Consultants is Mark Achariam, a person no stranger to the event management industry. He boasts 25 years of industry experience, spearheading numerous projects with big names in the corporate sector. Under his leadership Stargazer received the BrandLaureate SMEs BestBrands of The Decade Award.</p>
         <div className="stat-row">
           <div><strong><CountUp from={2000} to={2009} /></strong><span>Established</span></div>
-          <div><strong><CountUp to={23} suffix=" yrs" /></strong><span>Industry experience</span></div>
+          <div><strong><CountUp to={25} suffix=" yrs" /></strong><span>Industry experience</span></div>
           <div><strong><CountUp to={events.length} /></strong><span>Events showcased</span></div>
           <div><strong><CountUp to={clients.length} /></strong><span>Clients</span></div>
         </div>
@@ -38,6 +39,8 @@ export default function About() {
       </div>
     </section>
 
+    <AwardFeature />
+
     <section className="mission-band">
       <span className="eyebrow">OUR MISSION</span>
       <p>{mission}</p>
@@ -47,7 +50,7 @@ export default function About() {
     <section className="client-list section-pad">
       <SectionHead kicker="THE COMPANY WE KEEP" title="Our clients." />
       <p className="muted">Organisations we have had the privilege of working with.</p>
-      <div className="client-grid">{clients.map((c, i) => <div key={c}><span>{String(i + 1).padStart(2, '0')}</span>{c}</div>)}</div>
+      <div className="logo-wall">{clients.map((c, i) => <div key={c} className="logo-tile"><img src={clientLogo(i)} alt={c} title={c} loading="lazy" /></div>)}</div>
     </section>
 
     <Callout />

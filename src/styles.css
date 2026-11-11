@@ -12,3 +12,11 @@
 @media(max-width:900px){.section-pad{padding:95px 7vw}}
 @media(max-width:680px){.section-pad{padding:75px 7vw}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+/* Client logo wall */
+.logo-wall{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:40px}
+.logo-tile{background:#e6e6e8;aspect-ratio:3/2;display:flex;align-items:center;justify-content:center;padding:18px 22px;transition:transform .35s,box-shadow .35s}
+.logo-tile img{max-width:100%;max-height:100%;object-fit:contain;mix-blend-mode:multiply}
+.logo-tile:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(0,0,0,.45)}
+@media(max-width:900px){.logo-wall{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:680px){.logo-wall{grid-template-columns:repeat(2,1fr);gap:10px}.logo-tile{padding:14px}}

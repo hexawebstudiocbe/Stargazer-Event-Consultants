@@ -59,6 +59,8 @@ export const clients = [
   'Oriental Hearts And Minds Study Institute (OHMSI)'
 ]
 
+export const clientLogo = i => `/images/clients/${String(i + 1).padStart(2, '0')}.webp`
+
 export const mission = 'Our mission is dedicated to creating STYLISH, SENSATIONAL events while ensuring it to be a SPECTACULAR SUCCESS.'
 export const award = 'Winner of The BrandLaureate SMEs BestBrands of The Decade Award'
 export const IMG = '/images/'

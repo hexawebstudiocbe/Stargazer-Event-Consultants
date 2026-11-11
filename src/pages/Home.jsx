@@ -2,7 +2,9 @@ import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ArrowDown, ArrowUpRight, Sparkles } from 'lucide-react'
-import { services, clients } from '../data'
+import { services, clients, clientLogo } from '../data'
+import { serviceIcons } from '../serviceIcons'
+import Showreel from '../components/Showreel'
 import { heroImages } from '../workData'
 import SectionHead from '../components/SectionHead'
 import Callout from '../components/Callout'
@@ -83,6 +85,8 @@ export default function Home() {
       <div className="intro-photo"><ParallaxImage src={'/images/site/home-intro.webp'} alt="A corporate event produced by Stargazer" /><span className="photo-caption">A MOMENT, BEAUTIFULLY MADE</span></div>
     </section>
 
+    <Showreel />
+
     <section className="feature-band">
       <div className="feature-backdrop" />
       <div className="feature-inner">
@@ -96,7 +100,7 @@ export default function Home() {
     <section className="services-preview section-pad">
       <SectionHead kicker="WHAT WE DO" title={<>Every detail.<br /><em>Every possibility.</em></>} link="All services" href="/services" />
       <div className="service-grid">
-        {services.slice(0, 6).map((s, i) => <motion.div variants={reveal} initial="hidden" whileInView="show" viewport={{ once: true, amount: .25 }} className="service-tile" key={s}><span>0{i + 1}</span><h3>{s}</h3><ArrowUpRight /></motion.div>)}
+        {services.slice(0, 6).map((s, i) => { const Icon = serviceIcons[i]; return <motion.div variants={reveal} initial="hidden" whileInView="show" viewport={{ once: true, amount: .25 }} className="service-tile" key={s}><div className="service-icon"><Icon strokeWidth={1.5} /></div><span className="service-num">0{i + 1}</span><h3>{s}</h3><ArrowUpRight className="service-arrow" /></motion.div> })}
       </div>
     </section>
 
@@ -112,7 +116,7 @@ export default function Home() {
 
     <section className="client-strip section-pad">
       <SectionHead kicker="TRUSTED PARTNERS" title="In good company." link="Meet our clients" href="/about" />
-      <div className="client-words">{clients.slice(0, 12).map(c => <span key={c}>{c}</span>)}</div>
+      <div className="logo-wall">{clients.slice(0, 12).map((c, i) => <div key={c} className="logo-tile"><img src={clientLogo(i)} alt={c} title={c} loading="lazy" /></div>)}</div>
     </section>
 
     <Callout />

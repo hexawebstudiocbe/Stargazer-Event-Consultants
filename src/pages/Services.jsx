@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { ArrowUpRight } from 'lucide-react'
 import { services } from '../data'
+import { serviceIcons } from '../serviceIcons'
 import PageIntro from '../components/PageIntro'
 import Callout from '../components/Callout'
 import RevealHeading from '../components/RevealHeading'
@@ -19,7 +20,7 @@ export default function Services() {
         <p>Sixteen services covering launches, staging, audiovisual and lighting systems, venue decoration, food &amp; beverage, logistics, security and merchandising.</p>
       </div>
       <div className="services-list">
-        {services.map((s, i) => <motion.div key={s} className="service-row" initial={{ opacity: 0, x: 35 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: i * .035 }}><span>{String(i + 1).padStart(2, '0')}</span><h3>{s}</h3><ArrowUpRight /></motion.div>)}
+        {services.map((s, i) => { const Icon = serviceIcons[i]; return <motion.div key={s} className="service-row" initial={{ opacity: 0, x: 35 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: i * .035 }}><div className="service-row-icon"><Icon strokeWidth={1.5} /></div><div className="service-row-text"><span>{String(i + 1).padStart(2, '0')}</span><h3>{s}</h3></div><ArrowUpRight className="service-row-arrow" /></motion.div> })}
       </div>
     </section>
 

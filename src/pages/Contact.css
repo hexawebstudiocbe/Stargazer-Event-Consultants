@@ -12,3 +12,6 @@
 
 @media(max-width:900px){.contact-layout{gap:6%}}
 @media(max-width:680px){.contact-details h2{font-size:44px;margin-bottom:35px}.contact-layout{grid-template-columns:1fr;gap:55px}.contact-form{padding:28px 22px}}
+
+.contact-person{margin:26px 0 8px;display:flex;flex-direction:column;gap:4px}.contact-person b{font:500 18px 'Manrope'}.contact-person span{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#e57bc2}
+.contact-item a:hover{color:#ee8bd0}
