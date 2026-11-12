@@ -256,7 +256,7 @@ export const workEvents = [
   },
   {
     "slug": "lawasia-conference",
-    "title": "37th LAWASIA Conference 2024",
+    "title": "37th LAWASIA Conference",
     "category": "Conferences",
     "desc": "Opening ceremony with the Prime Minister of Malaysia, Kuala Lumpur.",
     "photos": [

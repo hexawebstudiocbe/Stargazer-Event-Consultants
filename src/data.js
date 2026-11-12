@@ -9,7 +9,7 @@ const allServices = [
   'LCD / LED / plasma projection system',
   'Press & media relations',
   'Exclusive venue decoration',
-  'Food & beverage',
+  'Corporate Catering & Dining',
   'Site selection & logistics',
   'Outdoor venues – giant marquee tents, gazebos, pyramid & Arabic tents',
   'Exhibition & roadshow showcase',
@@ -24,7 +24,7 @@ export const services = servicePicks.map(n => allServices[n - 1])
 // Recent highlights, shown first on the Our Events page
 export const recentEvents = [
   'Taylor’s University Club & Societies Event',
-  '37th LAWASIA Conference 2024 with Prime Minister of Malaysia',
+  '37th LAWASIA Conference with Prime Minister of Malaysia',
   'Malaysia Landscape Architecture Award with YB Hannah Yeoh, Minister in the Prime Minister’s Department',
   'Drew Network Asia Symposium Kuala Lumpur',
   'Bumiputera & World Halal BestBrands Award',
@@ -47,19 +47,19 @@ export const events = [
   'BrandLaureate World Awards, Shenzhen, China',
   'The Gamuda Land Biodiversity Day',
   'MAHSING Property Showcase',
-  'Malaysia Landscape Architecture Awards 2019 with Minister of Federal Territories',
+  'Malaysia Landscape Architecture Awards with Minister of Federal Territories',
   'Carrier Sports Club Annual Team Building, Langkawi',
   'BrandLaureate World Awards, Hanoi, Vietnam',
   'CIMB Staff Sustainability Appreciation Dinner',
   'BrandLaureate Special Edition World Awards, Singapore',
-  'Malaysia Landscape Architecture Awards 2022 with Chief Minister of Penang',
+  'Malaysia Landscape Architecture Awards with Chief Minister of Penang',
   'Gold A-Heart Fundraising Appreciation Dinner with Duli Yang Maha Mulia Tuanku Raja Perlis',
   'YTL Communications “Learn From Home” Project with Minister of Communications & Multimedia',
   'CIMB EPICC Roadshow',
   'CIMB Consumer Sales & Distribution Half Yearly Review',
-  'Malaysia Landscape Architecture Awards 2023 with Menteri Besar of Johor',
+  'Malaysia Landscape Architecture Awards with Menteri Besar of Johor',
   'The BrandLaureate Brand ICON Leadership Awards',
-  'International Malaysia Law Conference 2023 with Prime Minister of Malaysia',
+  'International Malaysia Law Conference with Prime Minister of Malaysia',
   'Malaysian Bar Annual Dinner & Dance'
 ]
 

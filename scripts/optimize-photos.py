@@ -40,7 +40,7 @@ EVENTS = [
      'A charity appreciation dinner with an exhibition gallery reception.', ['GOLDHEART FUND RAISING DINNER'], '6F6A4257'),
     ('malaysian-bar-annual-dinner-dance', 'Malaysian Bar Annual Dinner & Dance', 'Awards & Galas',
      'Stage, lighting and ballroom production for the Malaysian Bar.', ['MALAYSIAN BAR ANNUAL DINNER & DANCE'], '20240302_190352'),
-    ('lawasia-conference', '37th LAWASIA Conference 2024', 'Conferences',
+    ('lawasia-conference', '37th LAWASIA Conference', 'Conferences',
      'Opening ceremony with the Prime Minister of Malaysia, Kuala Lumpur.', ['LAWASIA CONFERENCE'], 'DSC00648'),
     ('international-malaysia-law-conference', 'International Malaysia Law Conference', 'Conferences',
      'Conference staging, AV and opening ceremonies for the legal community.', ['INTERNATIONAL MALAYSIA LAW CONFERENCE'], '20230710_110202'),

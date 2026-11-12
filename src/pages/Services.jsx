@@ -17,7 +17,7 @@ export default function Services() {
       <div className="services-lead">
         <span className="eyebrow">OUR SERVICES</span>
         <RevealHeading as="h2">From the first idea<br />to the <em>final encore.</em></RevealHeading>
-        <p>Sixteen services covering launches, staging, audiovisual and lighting systems, venue decoration, food &amp; beverage, logistics, security and merchandising.</p>
+        <p>Sixteen services covering launches, staging, audiovisual and lighting systems, venue decoration, corporate catering &amp; dining, logistics, security and merchandising.</p>
       </div>
       <div className="services-list">
         {services.map((s, i) => { const Icon = serviceIcons[i]; return <motion.div key={s} className="service-row" initial={{ opacity: 0, x: 35 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: i * .035 }}><div className="service-row-icon"><Icon strokeWidth={1.5} /></div><div className="service-row-text"><span>{String(i + 1).padStart(2, '0')}</span><h3>{s}</h3></div><ArrowUpRight className="service-row-arrow" /></motion.div> })}
