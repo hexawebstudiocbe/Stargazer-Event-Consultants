@@ -18,8 +18,8 @@ export default function AwardFeature() {
       <div className="award-copy">
         <RevealHeading as="h2">Acknowledgement<br />of <em>Excellence</em></RevealHeading>
         <p className="award-recipient">Recipient of The BrandLaureate SMEs BestBrands of The Decade Award</p>
-        <p>Stargazer Event Consultants was honoured with the prestigious BrandLaureate SMEs BestBrands of The Decade Award, received by Managing Director, Mark Achariam, on behalf of the company.</p>
-        <p>This distinguished recognition reflects the organisation's enduring commitment to creative excellence, professional integrity and consistently delivering exceptional event experiences. It stands as a testament to the dedication, expertise and high standards that define the Stargazer brand.</p>
+        <p>Stargazer Event Consultants was honoured with the prestigious BrandLaureate SMEs BestBrands of The Decade Award, accepted by Managing Director, Mark Achariam, on behalf of the company.</p>
+        <p>This distinguished accolade recognises Stargazer’s unwavering commitment to creative excellence, professional integrity and the delivery of exceptional event experiences. It reflects the dedication, expertise and meticulous attention to detail that underpin every project we undertake, while reinforcing the high standards and values that continue to define the Stargazer brand.</p>
       </div>
     </section>
   )
