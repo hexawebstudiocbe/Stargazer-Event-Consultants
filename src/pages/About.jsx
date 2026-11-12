@@ -13,7 +13,7 @@ export default function About() {
     <PageIntro kicker="THE PEOPLE BEHIND THE MOMENTS" title={<>A little about<br /><em>Stargazer.</em></>} desc="Creative thinking, thoughtful planning and a passion for making every occasion count." />
 
     <section className="about-story section-pad">
-      <div className="about-image"><img src="/images/site/about-us.webp" alt="Malaysia Landscape Architecture Awards stage and gala table setup" /></div>
+      <div className="about-image"><img src="/images/site/about-img.webp" alt="Collage of event stages, ballrooms and gala table setups by Stargazer" /></div>
       <div className="about-text">
         <RevealHeading as="h2">About Stargazer<br /><em>Event Consultants</em></RevealHeading>
         <p>Established in 2009, Stargazer Event Consultants is a corporate event management company specialising in the conceptualisation, design and execution of world-class event experiences. Driven by creativity, precision and a passion for excellence, we deliver innovative event solutions with seamless execution, particularly for large-scale corporate events. Our commitment to quality, attention to detail and ability to deliver with efficiency have earned us a reputation as a trusted partner in the industry.</p>

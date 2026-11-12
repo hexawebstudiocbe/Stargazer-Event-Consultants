@@ -43,7 +43,7 @@ export const events = [
   'CIMB Retail & Enterprise Distribution Annual Awards',
   'BrandLaureate Best Brand Awards with Former Prime Minister of Malaysia',
   'NAZA World Sales Convention',
-  'BrandLaureate Best Brand Icon Awards',
+  'Malaysia Bar Carnival',
   'BrandLaureate World Awards, Shenzhen, China',
   'The Gamuda Land Biodiversity Day',
   'MAHSING Property Showcase',
@@ -60,7 +60,10 @@ export const events = [
   'Malaysia Landscape Architecture Awards with Menteri Besar of Johor',
   'The BrandLaureate Brand ICON Leadership Awards',
   'International Malaysia Law Conference with Prime Minister of Malaysia',
-  'Malaysian Bar Annual Dinner & Dance'
+  'Malaysian Bar Annual Dinner & Dance',
+  'CIMB Signature Experience Launch & Open Day',
+  'The Aglow Clinic Grand Opening',
+  'CIMB Sustainability Appreciation Dinner'
 ]
 
 export const clients = [
@@ -70,7 +73,8 @@ export const clients = [
   'The BrandLaureate','Reckitt','Emerson Process Management','Chevrolet','Acts One Group Inc',
   'The Alice Smith School','Sheraton Subang','Kingdomcity','EFTRA','Jump Street','IACT College',
   'Early Autism Project','Brickfields Asia College','CFA Society Malaysia','Film Point',
-  'Oriental Hearts And Minds Study Institute (OHMSI)','Shearn Delamore & Co.','Taylor’s University'
+  'Oriental Hearts And Minds Study Institute (OHMSI)','Shearn Delamore & Co.','Taylor’s University',
+  'The Aglow Clinic','PETRA','TT Global','VIOBA','Ramco'
 ]
 
 export const clientLogo = i => `/images/clients/${String(i + 1).padStart(2, '0')}.webp`
