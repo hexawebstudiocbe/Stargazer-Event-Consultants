@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { X, ChevronLeft, ChevronRight, ArrowUpRight } from 'lucide-react'
-import { events } from '../data'
 import { workEvents, workCategories } from '../workData'
 import PageIntro from '../components/PageIntro'
 import SectionHead from '../components/SectionHead'
@@ -64,11 +63,6 @@ export default function Work() {
       </motion.div>
     </section>
 
-    <section className="events-list section-pad">
-      <SectionHead kicker="OUR EVENTS" title="A calendar of moments." />
-      <p className="muted">A look at the events we have delivered.</p>
-      <div className="event-columns">{events.map((e, i) => <div className="event-line" key={e}><span>{String(i + 1).padStart(2, '0')}</span><p>{e}</p></div>)}</div>
-    </section>
 
     <Callout />
 

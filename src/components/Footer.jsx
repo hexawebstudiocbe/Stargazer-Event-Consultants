@@ -18,7 +18,7 @@ export default function Footer() {
           <Link to="/contact">Let’s make it<br /><em>unforgettable.</em><ArrowUpRight /></Link>
         </div>
       </div>
-      <p className="footer-award">★ {award}</p>
+      <p className="footer-award"><img src="/images/site/trophy.webp" alt="" />{award}</p>
       <div className="footer-bottom">
         <span>© {new Date().getFullYear()} Stargazer Event Consultants</span>
         <span>Kuala Lumpur, Malaysia</span>

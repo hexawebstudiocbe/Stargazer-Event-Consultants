@@ -7,3 +7,5 @@
 .award-copy p{color:#b8adb8;font-size:14px;line-height:1.9;max-width:520px}
 @media(max-width:680px){.award-feature{grid-template-columns:1fr;gap:40px;padding:65px 8vw}.award-copy h2{font-size:44px}}
 .award-copy .award-recipient{font:500 17px/1.5 'Manrope';color:#ee8bd0;margin:0 0 20px}
+
+.award-photo img{object-position:62% center}

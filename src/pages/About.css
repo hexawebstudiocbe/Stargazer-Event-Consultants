@@ -22,3 +22,6 @@
 .award-line{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#d9cbd9}.award-mark{color:#e57bc2;margin-right:10px}
 @media(max-width:680px){.mission-band{padding:65px 8vw}}
 .about-subhead{font:500 22px 'Manrope';letter-spacing:-.02em;margin:38px 0 0;color:#f1e7f0}
+
+.mission-band p{font-size:clamp(20px,2.3vw,30px);line-height:1.55;max-width:980px}
+.award-line{display:flex;align-items:center;justify-content:center;gap:16px}.award-trophy{height:64px;width:auto}

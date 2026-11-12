@@ -17,9 +17,21 @@ const allServices = [
   'Merchandising, premium gifts & personalised printing'
 ]
 
-// Brochure service numbers shown on the site
-export const servicePicks = [1, 2, 4, 6, 8, 13, 14, 16]
+// Brochure service numbers shown on the site (all 16)
+export const servicePicks = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
 export const services = servicePicks.map(n => allServices[n - 1])
+
+// Recent highlights, shown first on the Our Events page
+export const recentEvents = [
+  'Taylor’s University Club & Societies Event',
+  '37th LAWASIA Conference 2024 with Prime Minister of Malaysia',
+  'Malaysia Landscape Architecture Award with YB Hannah Yeoh, Minister in the Prime Minister’s Department',
+  'Drew Network Asia Symposium Kuala Lumpur',
+  'Bumiputera & World Halal BestBrands Award',
+  'CIMB S.A.F.E Conference',
+  'CIMB Regional Media Engagement',
+  'Taylor’s University International & Cultural Feista'
+]
 
 export const events = [
   'The Official Opening of Chevrolet 3S Centre Puchong with Minister of Transport',
@@ -48,8 +60,6 @@ export const events = [
   'Malaysia Landscape Architecture Awards 2023 with Menteri Besar of Johor',
   'The BrandLaureate Brand ICON Leadership Awards',
   'International Malaysia Law Conference 2023 with Prime Minister of Malaysia',
-  '37th LAWASIA Conference 2024 with Prime Minister of Malaysia',
-  'DNA Symposium Kuala Lumpur',
   'Malaysian Bar Annual Dinner & Dance'
 ]
 
@@ -60,11 +70,11 @@ export const clients = [
   'The BrandLaureate','Reckitt','Emerson Process Management','Chevrolet','Acts One Group Inc',
   'The Alice Smith School','Sheraton Subang','Kingdomcity','EFTRA','Jump Street','IACT College',
   'Early Autism Project','Brickfields Asia College','CFA Society Malaysia','Film Point',
-  'Oriental Hearts And Minds Study Institute (OHMSI)'
+  'Oriental Hearts And Minds Study Institute (OHMSI)','Shearn Delamore & Co.','Taylor’s University'
 ]
 
 export const clientLogo = i => `/images/clients/${String(i + 1).padStart(2, '0')}.webp`
 
-export const mission = 'Our mission is dedicated to creating STYLISH, SENSATIONAL events while ensuring it to be a SPECTACULAR SUCCESS.'
+export const mission = 'Our mission is to conceptualise and deliver STYLISH, SOPHISTICATED, SENSATIONAL and SPECTACULAR events through creativity, innovation and meticulous attention to detail. We are committed to creating exceptional experiences, exceeding expectations and transforming every occasion into a memorable celebration of excellence.'
 export const award = 'Winner of The BrandLaureate SMEs BestBrands of The Decade Award'
 export const IMG = '/images/'

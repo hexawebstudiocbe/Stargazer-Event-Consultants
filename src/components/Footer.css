@@ -2,3 +2,5 @@
 .footer-bottom{border-top:1px solid var(--line);padding-top:22px;display:flex;align-items:center;gap:35px;color:#8e828e;font-size:10px}.socials{margin-left:auto;display:flex;gap:18px}.socials a:hover{color:#e57bc2}
 @media(max-width:680px){.footer{padding:55px 7vw 22px}.footer-top{align-items:flex-start;gap:30px;flex-direction:column}.footer-cta{text-align:left}.footer-bottom{flex-wrap:wrap;gap:12px 20px}.socials{margin-left:0;width:100%}}
 .footer-award{margin:0 0 22px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#e57bc2}
+
+.footer-award{display:flex;align-items:center;gap:14px}.footer-award img{height:46px;width:auto}

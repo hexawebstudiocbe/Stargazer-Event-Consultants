@@ -4,7 +4,7 @@ import { ArrowUpRight, Menu, X } from 'lucide-react'
 import Logo from './Logo'
 import './Header.css'
 
-const nav = [['Home', '/'], ['About', '/about'], ['Services', '/services'], ['Our Work', '/work'], ['Contact', '/contact']]
+const nav = [['Home', '/'], ['About', '/about'], ['Services', '/services'], ['Our Work', '/work'], ['Our Events', '/events'], ['Contact', '/contact']]
 
 export default function Header() {
   const [open, setOpen] = useState(false)

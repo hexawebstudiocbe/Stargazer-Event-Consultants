@@ -356,7 +356,7 @@ export const workEvents = [
   },
   {
     "slug": "dna-symposium-kuala-lumpur",
-    "title": "DNA Symposium Kuala Lumpur",
+    "title": "Drew Network Asia Symposium Kuala Lumpur",
     "category": "Conferences",
     "desc": "Branded stage, registration and seating for a symposium in Kuala Lumpur.",
     "photos": [

@@ -44,7 +44,7 @@ EVENTS = [
      'Opening ceremony with the Prime Minister of Malaysia, Kuala Lumpur.', ['LAWASIA CONFERENCE'], 'DSC00648'),
     ('international-malaysia-law-conference', 'International Malaysia Law Conference', 'Conferences',
      'Conference staging, AV and opening ceremonies for the legal community.', ['INTERNATIONAL MALAYSIA LAW CONFERENCE'], '20230710_110202'),
-    ('dna-symposium-kuala-lumpur', 'DNA Symposium Kuala Lumpur', 'Conferences',
+    ('dna-symposium-kuala-lumpur', 'Drew Network Asia Symposium Kuala Lumpur', 'Conferences',
      'Branded stage, registration and seating for a symposium in Kuala Lumpur.', ['DNA SYMPOSIUM KUALA LUMPUR'], '295525'),
     ('naza-world-sales-convention', 'NAZA World Sales Convention', 'Conferences',
      'Sales convention and gala dinner for the NAZA Group.', ['NAZA SALES CONVENTION', 'NAZA EVENTS'], '140'),

@@ -39,7 +39,7 @@ export default function About() {
     <section className="mission-band">
       <span className="eyebrow">OUR MISSION</span>
       <p>{mission}</p>
-      <div className="award-line"><span className="award-mark">★</span>{award}</div>
+      <div className="award-line"><img className="award-trophy" src="/images/site/trophy.webp" alt="" />{award}</div>
     </section>
 
     <section className="client-list section-pad">
